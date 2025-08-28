@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ByTech Assembly</title>
+        <!--FAVICO_IMAGE--->
+        <link rel="icon" href="img/favicon.ico" />
+        <!--Links_For_Icons--->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Boxicons -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <!--CSS-Code-->
+        <link rel="stylesheet" href="css/main.css">
+        <!--Tailwind-CSS-->
+        <link href="./output.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+<body>
+<!--Barra-de-Navegacion-->
+    <header>
+        <div class="logo">
+            <a href="#index.html"><img src="img/horizontal-logo(1)-copia.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul class="menu-links">
+                <li><a href="index.html">Inicio </a></li>
+                <li><a href="services.html" class="active">Servicios </a></li>
+                <li><a href="about.html">Nosotros </a></li>
+                <li><a href="contact.html">Contacto </a></li>
+            </ul>
+        </nav>
+        <div class="redes-sociales">
+            <a href="#"><i class="fa fa-envelope-o"></i></a>
+            <a href="https://www.paypal.com/invoice/p/#D458CTJNU6HYNHQT"><i class="fab fa-paypal"></i></a>
+            <a href="https://wa.me/message/4URVY6PV5V57F1"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div class="menu-btn" id="menu-btn">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </div>
+    </header>
+<!--Section-1-->
+<section class="start h-screen flex items-center justify-center relative">
+    <video class="absolute inset-0 w-full h-full object-cover z-1" autoplay muted loop>
+        <source src="media/background-services.mp4" type="video/mp4">
+        Tu navegador no soporta el formato de video.
+    </video>
+    <div class="relative z-10 flex flex-col items-center">
+        <img src="img/custom-logo(1)-copia.png" alt="Imagen" class="w-55 h-auto mb-4">
+        <p class="text-6xl font-bold text-white mb-4 shadow-2lx">
+            Descubre cómo <span class="text-6xl font-thin italic shadow-2lx">podemos ayudarte</span> con nuestros 
+            <span class="text-6xl font-thin italic shadow-2lx">servicios especializados</span>.
+        </p>             
+    </div>
+</section>
+<!--Section-2-->
+<section id="armado" class="bg-zinc-700 py-16">
+    <!-- Título Armado -->
+    <div class="text-center mb-12">
+        <h1 class="text-8xl font-light text-white font-mono animate-title">
+            <span class="inline-block title-letter">S</span>
+            <span class="inline-block title-letter">e</span>
+            <span class="inline-block title-letter">r</span>
+            <span class="inline-block title-letter">v</span>
+            <span class="inline-block title-letter">i</span>
+            <span class="inline-block title-letter">c</span>
+            <span class="inline-block title-letter">i</span>
+            <span class="inline-block title-letter">o</span>
+            <span class="inline-block">&nbsp;</span>
+            <span class="inline-block title-letter">d</span>
+            <span class="inline-block title-letter">e</span>
+            <span class="inline-block">&nbsp;</span>
+            <span class="inline-block title-letter">A</span>
+            <span class="inline-block title-letter">r</span>
+            <span class="inline-block title-letter">m</span>
+            <span class="inline-block title-letter">a</span>
+            <span class="inline-block title-letter">d</span>
+            <span class="inline-block title-letter">o</span>
+        </h1>        
+    </div>
+
+    <!-- Contenido de descripción e imagen -->
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
+        <!-- Texto Descripción -->
+        <div class="md:w-1/2 font-light text-3xl text-white leading-relaxed">
+            <p>
+                Nuestro servicio de <strong>armado de computadoras</strong> está diseñado para aquellos que buscan un rendimiento óptimo y personalizado. Ensamblamos tu equipo con los mejores componentes disponibles en el mercado, adaptándonos a tus necesidades, ya sea para <span class="italic">gaming</span>, diseño gráfico, programación o uso general. ¡Confía en nuestro equipo experto para crear la máquina perfecta para ti!
+            </p>
+        </div>
+
+        <!-- Imagen -->
+        <div class="md:w-1/2">
+            <img src="img/armado-computadora.jpg" alt="Armado de Computadora" class="border border-white rounded-lg shadow-xl object-cover w-full h-auto">
+        </div>
+    </div>
+
+    <!-- Tabla de Precios -->
+    <div class="container mx-auto mt-12">
+        <table class="w-full md:w-2/3 mx-auto bg-white shadow-xl rounded-lg text-gray-800 text-center">
+            <thead>
+                <tr class="bg-zinc-900 text-white text-3xl"> <!-- Texto del encabezado más grande -->
+                    <th class="py-4 px-6">Servicio</th>
+                    <th class="py-4 px-6">Descripción</th>
+                    <th class="py-4 px-6">Precio (MXN)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b border-gray-300 hover:bg-zinc-200 text-2xl"> <!-- Texto del cuerpo más grande -->
+                    <td class="py-4 px-6">Armado Básico</td>
+                    <td class="py-4 px-6">Ensamblaje de piezas con configuración estándar.</td>
+                    <td class="py-4 px-6">$1,500</td>
+                </tr>
+                <tr class="border-b border-gray-300 hover:bg-zinc-200 text-2xl">
+                    <td class="py-4 px-6">Armado Avanzado</td>
+                    <td class="py-4 px-6">Ensamblaje de piezas con optimización de rendimiento.</td>
+                    <td class="py-4 px-6">$2,500</td>
+                </tr>
+                <tr class="border-b border-gray-300 hover:bg-zinc-200 text-2xl">
+                    <td class="py-4 px-6">Armado Profesional</td>
+                    <td class="py-4 px-6">Ensamblaje de piezas y configuración de alto rendimiento para uso profesional.</td>
+                    <td class="py-4 px-6">$3,800</td>
+                </tr>
+                <tr class="border-b border-gray-300 hover:bg-zinc-200 text-2xl">
+                    <td class="py-4 px-6">Armado Personalizado</td>
+                    <td class="py-4 px-6">Configuración a medida según las necesidades del cliente.</td>
+                    <td class="py-4 px-6">$4,200</td>
+                </tr>
+                <tr class="border-b border-gray-300 hover:bg-zinc-200 text-2xl">
+                    <td class="py-4 px-6">Optimización del Sistema</td>
+                    <td class="py-4 px-6">Mejora del rendimiento general del equipo tras el armado.</td>
+                    <td class="py-4 px-6">$1,000</td>
+                </tr>
+                <tr class="border-b border-gray-300 hover:bg-zinc-200 text-2xl">
+                    <td class="py-4 px-6">Configuración de Software</td>
+                    <td class="py-4 px-6">Instalación y configuración de software esencial.</td>
+                    <td class="py-4 px-6">$600</td>
+                </tr>
+                <tr class="border-b border-gray-300 hover:bg-zinc-200 text-2xl">
+                    <td class="py-4 px-6">Mantenimiento Regular</td>
+                    <td class="py-4 px-6">Revisión y limpieza periódica del equipo.</td>
+                    <td class="py-4 px-6">$800</td>
+                </tr>
+            </tbody>
+        </table>        
+    </div>    
+</section>
+<!--Seccion-3-->
+<section id="reparacion" class="bg-zinc-800 py-16">
+    <div class="container mx-auto text-center">
+        <!-- Título con animación -->
+        <h1 class="text-8xl font-light text-white font-mono animate-bounce">
+            <span class="font-bold mr-2">Reparación</span>
+        </h1>
+        
+
+        <!-- Contenedor para la imagen y el texto -->
+        <div class="flex flex-col md:flex-row items-center justify-center mt-8">
+            <!-- Imagen -->
+            <img src="img/repair-image.jpg" alt="Reparación" class="w-full md:w-1/2 h-auto rounded-lg shadow-lg mb-8 md:mb-0">
+
+            <!-- Descripción del servicio -->
+            <div class="md:ml-8 text-white text-justify text-3xl">
+                <p class="mb-4">
+                    Nuestro servicio de <span class="underline">reparación de computadoras</span> se encarga de solucionar todo tipo de fallas, 
+                    desde <span class="underline">problemas de hardware</span> hasta <span class="underline">software</span>. 
+                    Nuestro equipo de <span class="underline">técnicos altamente capacitados</span> está listo para brindarte 
+                    una <span class="underline">atención personalizada</span> y garantizar la mejor calidad en cada reparación.
+                </p>
+            </div>            
+        </div>
+
+        <!-- Tabla con precios -->
+        <div class="container mx-auto mt-12">
+            <table class="w-full md:w-2/3 mx-auto bg-white shadow-xl rounded-lg text-gray-800 text-center">
+                <thead>
+                    <tr class="bg-zinc-900 text-white text-4xl">
+                        <th class="py-4 px-6">Servicio</th>
+                        <th class="py-4 px-6">Descripción</th>
+                        <th class="py-4 px-6">Precio (MXN)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b border-gray-300 hover:bg-zinc-200 text-2xl">
+                        <td class="py-4 px-6">Reparación Básica</td>
+                        <td class="py-4 px-6">Diagnóstico y reparación de problemas comunes.</td>
+                        <td class="py-4 px-6">$800</td>
+                    </tr>
+                    <tr class="border-b border-gray-300 hover:bg-zinc-200 text-2xl">
+                        <td class="py-4 px-6">Reparación Avanzada</td>
+                        <td class="py-4 px-6">Resolución de fallas complejas y optimización del sistema.</td>
+                        <td class="py-4 px-6">$1,500</td>
+                    </tr>
+                    <tr class="border-b border-gray-300 hover:bg-zinc-200 text-2xl">
+                        <td class="py-4 px-6">Reparación de Hardware</td>
+                        <td class="py-4 px-6">Reemplazo de componentes defectuosos y mejora de rendimiento.</td>
+                        <td class="py-4 px-6">$2,000</td>
+                    </tr>
+                    <tr class="border-b border-gray-300 hover:bg-zinc-200 text-2xl">
+                        <td class="py-4 px-6">Reparación de Software</td>
+                        <td class="py-4 px-6">Solución de problemas de software y reinstalación del sistema operativo.</td>
+                        <td class="py-4 px-6">$1,200</td>
+                    </tr>
+                    <tr class="border-b border-gray-300 hover:bg-zinc-200 text-2xl">
+                        <td class="py-4 px-6">Mantenimiento Preventivo</td>
+                        <td class="py-4 px-6">Revisión completa del sistema y limpieza de hardware.</td>
+                        <td class="py-4 px-6">$900</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+<!--Seccion-4-->
+<section id="mantenimiento" class="bg-zinc-900 py-12 h-screen flex items-center justify-center">
+    <div class="text-center">
+        <h1 class="text-8xl font-light text-white font-mono animate-pulse">
+            <span class="font-bold">Mantenimiento</span>
+        </h1>
+        
+        <div class="mt-8 text-white p-8 text-4xl text-justify">
+            <p class="mb-4">
+                Nuestro servicio de <span class="underline">mantenimiento</span> preventivo y correctivo se enfoca en asegurar que tu computadora 
+                funcione de manera óptima. Realizamos <span class="underline">revisiones periódicas</span> y ajustes necesarios para evitar 
+                fallas futuras, garantizando un rendimiento superior y prolongando la vida útil de tus equipos. 
+                Con un enfoque en la <span class="underline">calidad</span> y la <span class="underline">eficiencia</span>, nuestro equipo de 
+                técnicos altamente capacitados está preparado para detectar y corregir cualquier problema, desde la limpieza de componentes 
+                internos hasta la actualización de software. 
+                Además, ofrecemos planes de mantenimiento personalizados que se adaptan a tus necesidades específicas, asegurando que tu 
+                equipo esté siempre en las mejores condiciones. Nuestro objetivo es que puedas disfrutar de un rendimiento óptimo sin 
+                interrupciones, permitiéndote enfocarte en lo que realmente importa.
+            </p>
+        </div>        
+        
+        <div class="container mx-auto mt-12">
+            <table class="w-full md:w-2/3 mx-auto bg-white shadow-xl rounded-lg text-gray-800 text-center">
+                <thead>
+                    <tr class="bg-zinc-900 text-white text-3xl">
+                        <th class="py-4 px-6">Servicio</th>
+                        <th class="py-4 px-6">Descripción</th>
+                        <th class="py-4 px-6">Precio (MXN)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b border-gray-300 hover:bg-zinc-200 text-2xl">
+                        <td class="py-4 px-6">Mantenimiento Básico</td>
+                        <td class="py-4 px-6">Revisión general y limpieza de hardware.</td>
+                        <td class="py-4 px-6">$800</td>
+                    </tr>
+                    <tr class="border-b border-gray-300 hover:bg-zinc-200 text-2xl">
+                        <td class="py-4 px-6">Mantenimiento Avanzado</td>
+                        <td class="py-4 px-6">Revisión completa con optimización de software.</td>
+                        <td class="py-4 px-6">$1,200</td>
+                    </tr>
+                    <tr class="border-b border-gray-300 hover:bg-zinc-200 text-2xl">
+                        <td class="py-4 px-6">Mantenimiento Profesional</td>
+                        <td class="py-4 px-6">Mantenimiento integral con instalación de software adicional.</td>
+                        <td class="py-4 px-6">$1,800</td>
+                    </tr>
+                    <tr class="border-b border-gray-300 hover:bg-zinc-200 text-2xl">
+                        <td class="py-4 px-6">Mantenimiento Personalizado</td>
+                        <td class="py-4 px-6">Servicios a medida según las necesidades del cliente.</td>
+                        <td class="py-4 px-6">$2,500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+<!--Section-5-->
+<section class="bg-zinc-950 py-12">
+    <h2 class="text-6xl font-bold text-white text-center mb-8">Marcas</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mx-auto max-w-6xl">
+        <div class="flex justify-center">
+            <img src="img/1.png" alt="Marca 1" class="w-full h-auto max-h-32 object-contain">
+        </div>
+        <div class="flex justify-center">
+            <img src="img/2.png" alt="Marca 2" class="w-full h-auto max-h-32 object-contain">
+        </div>
+        <div class="flex justify-center">
+            <img src="img/3.png" alt="Marca 3" class="w-full h-auto max-h-32 object-contain">
+        </div>
+        <div class="flex justify-center">
+            <img src="img/4.png" alt="Marca 4" class="w-full h-auto max-h-32 object-contain">
+        </div>
+        <div class="flex justify-center">
+            <img src="img/5.png" alt="Marca 5" class="w-full h-auto max-h-32 object-contain">
+        </div>
+        <div class="flex justify-center">
+            <img src="img/6.png" alt="Marca 6" class="w-full h-auto max-h-32 object-contain">
+        </div>
+    </div>
+</section>
+
+<!--Footer-->
+<footer class="w-full flex flex-col items-center justify-center py-8 px-8 bg-black text-white">
+    <!-- Logo -->
+    <img src="img/horizontal-logo(1)-copia.png" alt="Logo" class="w-44 mb-4">
+
+    <!-- Social Icons -->
+    <div class="flex items-center justify-center mb-4 space-x-4">
+        <a href="#" class="text-white hover:text-gray-300">
+            <i class="fab fa-facebook-f text-4xl border-0 border-white p-3 rounded-full hover:bg-white hover:text-black transition duration-300"></i>
+        </a>
+        <a href="#" class="text-white hover:text-gray-300">
+            <i class="fab fa-discord text-4xl border-0 border-white p-3 rounded-full hover:bg-white hover:text-black transition duration-300"></i>
+        </a>
+        <a href="#" class="text-white hover:text-gray-300">
+            <i class="fab fa-instagram text-4xl border-0 border-white p-3 rounded-full hover:bg-white hover:text-black transition duration-300"></i>
+        </a>
+        <a href="#" class="text-white hover:text-gray-300">
+            <i class="fas fa-envelope text-4xl border-0 border-white p-3 rounded-full hover:bg-white hover:text-black transition duration-300"></i>
+        </a>
+    </div>
+
+    <!-- Payment Methods -->
+    <!-- Payment Methods as Buttons -->
+     <!-- Payment Methods as Buttons -->
+    <div class="flex items-center justify-center space-x-4 mb-4">
+    <button class="w-16 h-16 p-2 bg-white rounded-lg hover:bg-gray-200 transition duration-300">
+        <img src="img/VISA.jpg" alt="Visa" class="w-full h-full object-contain">
+    </button>
+    <button class="w-16 h-16 p-2 bg-white rounded-lg hover:bg-gray-200 transition duration-300">
+        <img src="img/mastercard.png" alt="Mastercard" class="w-full h-full object-contain">
+    </button>
+    <!-- PayPal Button with Link -->
+    <a href="https://www.paypal.com/invoice/p/#D458CTJNU6HYNHQT" target="_blank">
+        <button class="w-16 h-16 p-2 bg-white rounded-lg hover:bg-gray-200 transition duration-300">
+            <img src="img/paypal.png" alt="PayPal" class="w-full h-full object-contain">
+        </button>
+    </a>
+    <button class="w-16 h-16 p-2 bg-white rounded-lg hover:bg-gray-200 transition duration-300">
+        <img src="img/amex.png" alt="American Express" class="w-full h-full object-contain">
+    </button>
+    </div>
+
+
+
+    <!-- Footer Menu -->
+    <ul class="flex items-center justify-center flex-wrap mb-4 text-xl">
+        <li class="menu-item cursor-pointer mx-4 hover:opacity-100 opacity-60"><a href="doc/Aviso.pdf">Aviso de Privacidad </a></li>
+        <li class="menu-item cursor-pointer mx-4 hover:opacity-100 opacity-60"><a href="doc/Términos.pdf">Términos & Condiciones </a></li>
+    </ul>
+
+    <!-- Copyright -->
+    <span class="text-opacity-30">&copy; 2024, ByTech Assembly. Todos los derechos reservados.</span>
+</footer>
+
+<!--JavaScript-->
+<script src="js/scripts.js"></script>
+</body>
+</html>

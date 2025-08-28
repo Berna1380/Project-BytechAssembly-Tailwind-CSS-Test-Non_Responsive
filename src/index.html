@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ByTech Assembly</title>
+        <!--FAVICO_IMAGE--->
+        <link rel="icon" href="img/favicon.ico" />
+        <!--Links_For_Icons--->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Boxicons -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <!--CSS-Code-->
+        <link rel="stylesheet" href="css/main.css">
+        <!--Tailwind-CSS-->
+        <link href="./output.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+<body>
+<!--Barra-de-Navegacion-->
+    <header>
+        <div class="logo">
+            <a href="#index.html"><img src="img/horizontal-logo(1)-copia.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul class="menu-links">
+                <li><a href="index.html"  class="active">Inicio </a></li>
+                <li><a href="services.html">Servicios </a></li>
+                <li><a href="about.html">Nosotros </a></li>
+                <li><a href="contact.html">Contacto </a></li>
+            </ul>
+        </nav>
+        <div class="redes-sociales">
+            <a href="#"><i class="fa fa-envelope-o"></i></a>
+            <a href="https://www.paypal.com/invoice/p/#D458CTJNU6HYNHQT"><i class="fab fa-paypal"></i></a>
+            <a href="https://wa.me/message/4URVY6PV5V57F1"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div class="menu-btn" id="menu-btn">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </div>
+    </header>
+<!--Section-1-->
+<section class="start h-screen flex items-center">
+    <div class="relative flex w-full h-full">
+        <video class="absolute inset-0 w-full h-full object-cover z-1" autoplay muted loop>
+            <source src="media/background-index.mp4" type="video/mp4">
+            Tu navegador no soporta el formato de video.
+        </video>
+        <div class="absolute left-0 top-1/2 transform -translate-y-1/2 p-8 text-white z-10 w-1/2 ml-8">
+            <h1 class="text-9xl font-bold mb-4">
+                Construyendo el 
+                <span class="text-9xl font-thin italic">Futuro</span> 
+                una 
+                <span class="text-9xl font-thin italic">Computadora</span> 
+                a la vez
+            </h1>
+            <p class="mt-6 text-2xl font-light">Somos técnicos especializados en reparaciones de computadoras.</p>
+            <div class="mt-6 flex space-x-4">
+                <!-- Botón transparente -->
+                <a href="#" class="inline-block px-6 py-3 border border-white text-white text-2xl font-thin rounded hover:bg-white hover:text-black transition duration-300">Explorar</a>
+                <!-- Botón invertido -->
+                <a href="https://wa.me/message/4URVY6PV5V57F1" class="inline-block px-6 py-3 bg-white text-black border border-black text-2xl font-thin rounded hover:bg-black hover:text-white transition duration-300">Ordenar Ahora!</a>
+            </div>
+        </div>
+        <div class="absolute right-0 top-1/2 transform -translate-y-1/2 p-8 z-10 w-1/2">
+            <img src="img/custom-logo(1).png" alt="Imagen" class="w-55 h-auto">
+        </div>
+    </div>
+</section>
+<!--Seccion-2-->
+<section class="bg-zinc-900 py-16">
+    <div class="container mx-auto px-4">
+        <div class="text-center">
+            <h2 class="text-8xl mb-4 text-white">
+                Un <span class="font-bold">Poco</span> Sobre <span class="font-bold">Nosotros</span>
+            </h2>
+            <p class="text-2xl text-white mx-auto max-w-2xl">
+                Somos un equipo dedicado a ofrecer soluciones efectivas en la reparación y mantenimiento de computadoras. 
+                Con años de experiencia en el sector, nuestro objetivo es proporcionar un servicio de alta calidad y 
+                atención personalizada para asegurar que tu equipo funcione de manera óptima. Nuestro compromiso es tu 
+                satisfacción, trabajando con precisión y eficiencia para resolver cualquier problema que puedas tener con 
+                tu computadora.
+            </p>
+            <div class="mt-8">
+                <a href="about.html" class="inline-block px-8 py-4 bg-black text-white text-xl font-semibold rounded-lg hover:bg-white hover:text-black transition duration-300">
+                    Saber Más
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Seccion-3-->
+<section class="bg-zinc-900 py-16">
+    <div class="container mx-auto px-4">
+        <div class="text-center">
+            <h2 class="text-8xl font-thin text-white mb-8 border-b-4 border-black inline-block">
+                Servicios Más Populares
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Caja 1: Armado -->
+                <div class="bg-black p-6 rounded-lg text-center">
+                    <img src="img/armado-logo.png" alt="Logo Armado" class="w-20 h-auto mx-auto mb-4">
+                    <h3 class="text-5xl font-thin text-white mb-2">Armado</h3>
+                    <p class="text-2xl text-gray-300 mb-4 text-justify">
+                        Nuestro servicio de armado ofrece una solución completa para tus necesidades informáticas. 
+                        Seleccionamos los mejores componentes para ensamblar una computadora personalizada que se ajuste 
+                        a tus requerimientos específicos, ya sea para juegos, trabajo profesional o uso diario. 
+                        Nos aseguramos de que cada componente esté instalado correctamente y probado para un rendimiento 
+                        óptimo, garantizando la estabilidad y eficiencia de tu sistema.
+                    </p>
+                    <a href="services.html#armado" class="inline-block px-6 py-3 border border-white text-white text-2xl font-thin rounded hover:bg-white hover:text-black transition duration-300">
+                        Más Información
+                    </a>
+                </div>
+                <!-- Caja 2: Reparación -->
+                <div class="bg-black p-6 rounded-lg text-center">
+                    <img src="img/reparacion-logo.png" alt="Logo Reparación" class="w-20 h-auto mx-auto mb-4">
+                    <h3 class="text-5xl font-thin text-white mb-2">Reparación</h3>
+                    <p class="text-2xl text-gray-300 mb-4 text-justify">
+                        Nuestro servicio de reparación aborda cualquier problema técnico que pueda estar afectando tu 
+                        computadora. Desde fallos en el hardware hasta problemas con el software, nuestro equipo de 
+                        expertos diagnostica y soluciona cada inconveniente con precisión. Ofrecemos reparaciones rápidas 
+                        y efectivas para minimizar el tiempo de inactividad de tu equipo, y aseguramos que tu computadora 
+                        vuelva a funcionar como nueva.
+                    </p>
+                    <a href="services.html#reparacion" class="inline-block px-6 py-3 border border-white text-white text-2xl font-thin rounded hover:bg-white hover:text-black transition duration-300">
+                        Más Información
+                    </a>
+                </div>
+                <!-- Caja 3: Mantenimiento -->
+                <div class="bg-black p-6 rounded-lg text-center">
+                    <img src="img/mantenimiento-logo.png" alt="Logo Mantenimiento" class="w-20 h-auto mx-auto mb-4">
+                    <h3 class="text-5xl font-thin text-white mb-2">Mantenimiento</h3>
+                    <p class="text-2xl text-gray-300 mb-4 text-justify">
+                        Nuestro servicio de mantenimiento es esencial para mantener tu computadora en condiciones óptimas. 
+                        Realizamos chequeos periódicos para detectar y corregir cualquier problema potencial antes de que 
+                        se convierta en un inconveniente mayor. Esto incluye limpieza de componentes, actualización de 
+                        software, y ajustes de rendimiento para asegurar que tu sistema funcione de manera eficiente y 
+                        prolongar la vida útil de tus equipos.
+                    </p>
+                    <a href="services.html#mantenimiento" class="inline-block px-6 py-3 border border-white text-white text-2xl font-thin rounded hover:bg-white hover:text-black transition duration-300">
+                        Más Información
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Seccion-4-->
+<section class="bg-zinc-950 py-16">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-6xl font-bold text-white mb-8 leading-relaxed">
+            ¿<span class="relative text-white bg-black py-1 px-2 rounded">Listo</span> para llevar tu <span class="relative text-white bg-black py-1 px-2 rounded">computadora</span> al siguiente nivel? 
+            <br><span class="relative text-white bg-black py-1 px-2 rounded">Contáctanos</span> hoy mismo para recibir una <span class="relative text-white bg-black py-1 px-2 rounded">asesoría personalizada</span> y encontrar la mejor <span class="relative text-white bg-black py-1 px-2 rounded">solución</span> a tus <span class="relative text-white bg-black py-1 px-2 rounded">necesidades</span>.
+        </h2>
+        <a href="#contacto" class="inline-block px-12 py-6 border border-white text-white text-3xl font-bold rounded hover:bg-white hover:text-black transition duration-300">
+            Contratación
+        </a>
+    </div>
+</section>
+<!--Footer-->
+<footer class="w-full flex flex-col items-center justify-center py-8 px-8 bg-black text-white">
+    <!-- Logo -->
+    <img src="img/horizontal-logo(1)-copia.png" alt="Logo" class="w-44 mb-4">
+
+    <!-- Social Icons -->
+    <div class="flex items-center justify-center mb-4 space-x-4">
+        <a href="#" class="text-white hover:text-gray-300">
+            <i class="fab fa-facebook-f text-4xl border-0 border-white p-3 rounded-full hover:bg-white hover:text-black transition duration-300"></i>
+        </a>
+        <a href="#" class="text-white hover:text-gray-300">
+            <i class="fab fa-discord text-4xl border-0 border-white p-3 rounded-full hover:bg-white hover:text-black transition duration-300"></i>
+        </a>
+        <a href="#" class="text-white hover:text-gray-300">
+            <i class="fab fa-instagram text-4xl border-0 border-white p-3 rounded-full hover:bg-white hover:text-black transition duration-300"></i>
+        </a>
+        <a href="#" class="text-white hover:text-gray-300">
+            <i class="fas fa-envelope text-4xl border-0 border-white p-3 rounded-full hover:bg-white hover:text-black transition duration-300"></i>
+        </a>
+    </div>
+
+    <!-- Payment Methods -->
+    <!-- Payment Methods as Buttons -->
+     <!-- Payment Methods as Buttons -->
+    <div class="flex items-center justify-center space-x-4 mb-4">
+    <button class="w-16 h-16 p-2 bg-white rounded-lg hover:bg-gray-200 transition duration-300">
+        <img src="img/VISA.jpg" alt="Visa" class="w-full h-full object-contain">
+    </button>
+    <button class="w-16 h-16 p-2 bg-white rounded-lg hover:bg-gray-200 transition duration-300">
+        <img src="img/mastercard.png" alt="Mastercard" class="w-full h-full object-contain">
+    </button>
+    <!-- PayPal Button with Link -->
+    <a href="https://www.paypal.com/invoice/p/#D458CTJNU6HYNHQT" target="_blank">
+        <button class="w-16 h-16 p-2 bg-white rounded-lg hover:bg-gray-200 transition duration-300">
+            <img src="img/paypal.png" alt="PayPal" class="w-full h-full object-contain">
+        </button>
+    </a>
+    <button class="w-16 h-16 p-2 bg-white rounded-lg hover:bg-gray-200 transition duration-300">
+        <img src="img/amex.png" alt="American Express" class="w-full h-full object-contain">
+    </button>
+    </div>
+
+
+
+    <!-- Footer Menu -->
+    <ul class="flex items-center justify-center flex-wrap mb-4 text-xl">
+        <li class="menu-item cursor-pointer mx-4 hover:opacity-100 opacity-60"><a href="doc/Aviso.pdf">Aviso de Privacidad </a></li>
+        <li class="menu-item cursor-pointer mx-4 hover:opacity-100 opacity-60"><a href="doc/Términos.pdf">Términos & Condiciones </a></li>
+    </ul>
+
+    <!-- Copyright -->
+    <span class="text-opacity-30">&copy; 2024, ByTech Assembly. Todos los derechos reservados.</span>
+</footer>
+<!--JavaScript-->
+<script src="js/scripts.js"></script>
+</body>
+</html>

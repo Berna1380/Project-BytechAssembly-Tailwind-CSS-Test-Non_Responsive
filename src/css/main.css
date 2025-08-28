@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+html{
+    font-size: 62.5%; /* 1rem = 10px */
+}
+:root{
+/* Font Sizes & Family */
+/* if we set html's font size 62.5% then 1rem = 10px */
+
+--body-font: 'Roboto Flex', system-ui;
+
+--mega-ultra-font: 7rem;
+--mega-font: 6rem;
+--ultra-font: 5rem;
+--big-font: 4rem;
+--h1-font: 3.6rem;
+--h2-font: 2.4rem;
+--h3-font: 2rem;
+--h4-font: 1.8rem;
+--normal-font: 1.6rem;
+--small-font: 1.4rem;
+--smaller-font: 1.3rem;
+
+/* Font Weight ***/
+--font-regular: 400;
+--font-medium: 500;
+--font-semi-bold: 600;
+
+/* Color Variables */
+--primary-color: #4b7469;
+--primary-color-hover: #1cdf57;
+--text-color: #333;
+--text-color-light: #888682;
+--border-color: #484848;
+--white-color: #FFF;
+--section-bg: #2C3034;
+--title-color: #2a5a2f;
+--brown-color: #6c757d;
+--about-color: #d4ffd7;
+
+/* Paleta Primaria de Colores */
+--light-color: #d2d2d2;
+--color-not-so-light: #3d3d3d;
+--something-dark: #1c1c1c;
+--more-dark: #111111;
+--absolute-dark: #000000; 
+
+/* z-index */
+--z-overlay: 10;
+--z-fixed: 100;
+
+/* transition */
+--tran-0-2: 0.2s;
+--tran-0-3: 0.3s;
+--tran-0-5: 0.5s;
+}
+
+/*Font sizes For Small Screen 968px */
+@media screen and (max-width: 990px) {
+:root {
+  --big-font: 3.5rem;
+  --h1-font: 2.4rem;
+  --h2-font: 2rem;
+  --h3-font: 1.8rem;
+  --h4-font: 1.6rem;
+  --normal-font: 1.5rem;
+  --small-font: 1.3rem;
+  --smaller-font: 1.2rem;
+}
+}
+
+
+/* Pre-CSS */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+  background-color: var(--white-color);
+  font-family: var(--body-font);
+}
+
+/* Custom Scrollbar */
+::selection{
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+::-webkit-scrollbar{
+  width: 8px;
+}
+::-webkit-scrollbar-track{
+  background-color: var(--more-dark);
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 1rem;
+  background-color: var(--brown-color);
+}
+::-webkit-scrollbar-thumb:hover{
+  border-radius: 1rem;
+  background-color: var(--white-color)
+}
+
+/*Boton*/
+.boton {
+  cursor: pointer;
+  border-radius: 5%;
+  color: var(--primary-color);
+  font-size: 1.5vw; /* Utiliza una medida relativa como vw para el tamaño del texto */
+  font-weight: 500;
+  padding: .75vw 2.0vw; /* Utiliza medidas relativas para el relleno */
+  background: rgba(0,0,0,0);
+  border: 0.2vw solid; /* Utiliza una medida relativa para el grosor del borde */
+  border-color: var(--primary-color);
+  transition: all 0.3s ease; /* Reduce el tiempo de transición para que sea más sensible */
+  position: relative;
+  display: inline-block; /* Asegura que el botón se ajuste al contenido */
+  text-decoration: none; /* Elimina el subrayado predeterminado */
+}
+
+@media (max-width: 768px) {
+  .boton {
+    font-size: 3vw; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .boton {
+    font-size: 2vw; /* Ajusta el tamaño del texto para pantallas aún más pequeñas */
+  }
+}
+
+
+.boton:hover {
+  background: #52796f;
+  color: #fff !important;
+}
+
+/*Barra de Navegacion*/
+
+header {
+  position: fixed; /* Fija la barra de navegación en la parte superior de la ventana */
+  top: 0; /* Alinea la barra de navegación en la parte superior de la ventana */
+  width: 100%; /* Establece la anchura de la barra de navegación al 100% del viewport */
+  z-index: 1000; /* Asegura que la barra de navegación esté por encima de otros elementos */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem;
+}
+
+.logo img { 
+  max-height: 20rem;
+  width: 15rem; /* Ajusta el tamaño máximo de tu logo según sea necesario */
+  margin-right: 1rem; /* Ajusta el margen derecho del logo */
+  margin-left: 5rem;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 1.6rem; /* Ajusta el margen derecho de los elementos de la lista */
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+nav ul li a {
+  font-family: var(--body-font);
+  border: 0.1vw solid;
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: var(--h3-font);
+  font-weight: lighter;
+  padding: 0.5rem 1rem; /* Ajusta el relleno del botón según sea necesario */
+  transition: border-color 0.3s ease; /* Agrega una transición suave para el cambio de color del borde */
+}
+
+nav ul li a:hover{
+  color: var(--more-dark);
+  background-color: var(--white-color);
+}
+
+
+nav ul li a.active {
+  background-color: var(--white-color);
+  color: var(--more-dark);
+}
+
+.redes-sociales {
+  margin-right: 5rem; /* Ajusta el margen izquierdo de los iconos de redes sociales */
+}
+
+.redes-sociales a {
+  color: var(--white-color); /* Cambia el color de los iconos de redes sociales según tu diseño */
+  margin-left: 1rem; /* Ajusta el margen izquierdo entre los iconos de redes sociales */
+  font-size: var(--h3-font);
+  padding: 0.5rem 1rem; /* Ajusta el relleno del botón según sea necesario */
+  border: 2px solid transparent; /* Agrega un borde transparente al botón */
+  transition: border-color 0.3s ease;
+  border-radius: 1rem;
+}
+.redes-sociales a:hover{
+  border-color: var(--white-color); /* Cambia el color del borde al pasar el mouse sobre el botón */
+}
+
+.menu-btn {
+  font-size: var(--h2-font);
+  color: var(--white-color);
+  display: none; /* El botón del menú se mostrará en dispositivos móviles */
+  padding: 0.5rem 1rem; /* Ajusta el relleno del botón según sea necesario */
+  border: 2px solid transparent; /* Agrega un borde transparente al botón */
+  border-radius: 0.5rem; /* Ajusta el radio de borde para redondear los botones */
+  transition: border-color 0.3s ease; /* Agrega una transición suave para el cambio de color del borde */
+}
+
+.menu-btn.active {
+  border-color: var(--white-color); /* Cambia el color del borde del botón activo */
+  color: var(--white-color); /* Cambia el color del texto del botón activo */
+}
+
+.menu-btn.active .fa-bars {
+  color: var(--white-color); /* Cambia el color del icono del botón activo */
+}
+
+/*Sticky Effect*/
+.sticky {
+    background-color: var(--more-dark) !important;
+    transition: background-color 0.3s ease;
+}
+
+/*Diseño de dispositivos Moviles*/
+@media screen and (max-width: 1080px) {
+nav {
+    display: none;
+  }
+ul{
+  background-color: var(--more-dark);
+  position: fixed;
+  top: 8rem;
+  left: 0%;
+  height: 100%;
+}
+nav ul li {
+  margin: 2rem 4rem 2rem 4rem;
+  display: flex;
+  }
+.show {
+    display: block;
+    transition: transform 0.3s ease;
+  }
+.menu-btn {
+    display: block;
+}
+
+.menu-btn .fa-times {
+    display: none;
+}
+
+.menu-btn.close .fa-bars {
+    display: none;
+}
+
+.menu-btn.close .fa-times {
+    display: block;
+}
+}
+
+/*Animacion Titulo Servicios Armado de Computadoras*/
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) rotate(-10deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05) rotate(5deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes delayAppearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Animación aplicada a cada letra */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) rotate(-10deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05) rotate(5deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes delayAppearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Animación aplicada a cada letra */
+.title-letter {
+  animation: fadeInScale 1.5s ease forwards, delayAppearance 1s ease forwards;
+  display: inline-block;
+  transform-origin: bottom;
+  opacity: 0;
+}
+
+/* Ajustes de timing para cada letra (con mayor retraso) */
+.title-letter:nth-child(1) { animation-delay: 0s; }
+.title-letter:nth-child(2) { animation-delay: 0.2s; }
+.title-letter:nth-child(3) { animation-delay: 0.4s; }
+.title-letter:nth-child(4) { animation-delay: 0.6s; }
+.title-letter:nth-child(5) { animation-delay: 0.8s; }
+.title-letter:nth-child(6) { animation-delay: 1s; }
+.title-letter:nth-child(7) { animation-delay: 1.2s; }
+.title-letter:nth-child(8) { animation-delay: 1.4s; }
+.title-letter:nth-child(9) { animation-delay: 1.6s; }
+.title-letter:nth-child(10) { animation-delay: 1.8s; }
+.title-letter:nth-child(11) { animation-delay: 2s; }
+.title-letter:nth-child(12) { animation-delay: 2.2s; }
+.title-letter:nth-child(13) { animation-delay: 2.4s; }
+.title-letter:nth-child(14) { animation-delay: 2.6s; }
+.title-letter:nth-child(15) { animation-delay: 2.8s; }
+.title-letter:nth-child(16) { animation-delay: 3s; }
+.title-letter:nth-child(17) { animation-delay: 3.2s; }

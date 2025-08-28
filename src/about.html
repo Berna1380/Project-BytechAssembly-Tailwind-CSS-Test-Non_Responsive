@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ByTech Assembly</title>
+        <!--FAVICO_IMAGE--->
+        <link rel="icon" href="img/favicon.ico" />
+        <!--Links_For_Icons--->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Boxicons -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <!--CSS-Code-->
+        <link rel="stylesheet" href="css/main.css">
+        <!--Tailwind-CSS-->
+        <link href="./output.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+<body>
+<!--Barra-de-Navegacion-->
+    <header>
+        <div class="logo">
+            <a href="#index.html"><img src="img/horizontal-logo(1)-copia.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul class="menu-links">
+                <li><a href="index.html">Inicio </a></li>
+                <li><a href="services.html">Servicios </a></li>
+                <li><a href="about.html" class="active">Nosotros </a></li>
+                <li><a href="contact.html">Contacto </a></li>
+            </ul>
+        </nav>
+        <div class="redes-sociales">
+            <a href="#"><i class="fa fa-envelope-o"></i></a>
+            <a href="https://www.paypal.com/invoice/p/#D458CTJNU6HYNHQT"><i class="fab fa-paypal"></i></a>
+            <a href="https://wa.me/message/4URVY6PV5V57F1"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div class="menu-btn" id="menu-btn">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </div>
+    </header>
+<!--Section-1-->
+<section class="start">
+    <section class="start h-screen flex items-center justify-center relative">
+        <video class="absolute inset-0 w-full h-full object-cover z-1" autoplay muted loop>
+            <source src="media/background-about.mp4" type="video/mp4">
+            Tu navegador no soporta el formato de video.
+        </video>
+        <div class="relative z-10 flex flex-col items-center">
+            <img src="img/horizontal-logo(1)-copia.png" alt="Imagen" class="w-55 h-auto mb-4">
+            <p class="text-6xl font-bold text-white mb-4 shadow-2xl px-8">
+                Comprometidos con la <span class="text-6xl font-thin italic shadow-2xl">excelencia</span> en cada <span class="text-6xl font-thin italic shadow-2xl">reparación</span>, somos un equipo de <span class="text-6xl font-thin italic shadow-2xl">expertos dedicados</span> a brindar el mejor <span class="text-6xl font-thin italic shadow-2xl">servicio técnico</span> para tu computadora.
+            </p>            
+        </div>
+    </section>
+</section>
+<!--Section-2-->
+<section id="vision" class="bg-zinc-700 py-16">
+    <!-- Título Armado -->
+    <div class="text-center mb-12">
+        <h1 class="text-8xl font-light text-white font-mono animate-title">
+            <span class="inline-block title-letter">V</span>
+            <span class="inline-block title-letter">i</span>
+            <span class="inline-block title-letter">s</span>
+            <span class="inline-block title-letter">i</span>
+            <span class="inline-block title-letter">o</span>
+            <span class="inline-block title-letter">n</span>
+        </h1>        
+    </div>
+
+    <!-- Contenido de descripción e imagen -->
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
+        <!-- Texto Descripción -->
+        <div class="md:w-1/2 font-light text-3xl text-white leading-relaxed">
+            <p>
+                Ser el líder en soluciones tecnológicas a nivel local, reconocido por nuestra innovación, calidad en el servicio y compromiso con el cliente. Aspiramos a consolidarnos como referentes en el mercado de reparación y armado de computadoras, expandiendo nuestra presencia y ofreciendo acceso a tecnología de vanguardia. Además, buscamos fomentar la educación digital en nuestra comunidad, contribuyendo al desarrollo tecnológico y al uso eficiente de los recursos informático.
+            </p>
+        </div>
+
+        <!-- Imagen -->
+        <div class="md:w-1/2">
+            <img src="img/vision.jpg" alt="Armado de Computadora" class="border border-white rounded-lg shadow-xl object-cover w-full h-auto">
+        </div>
+    </div>
+</section>
+<!--Section-3-->
+<section id="mision" class="bg-zinc-800 py-16">
+    <div class="container mx-auto text-center">
+        <!-- Título con animación -->
+        <h1 class="text-8xl font-light text-white font-mono animate-bounce">
+            <span class="font-bold mr-2">Mision</span>
+        </h1>
+
+        <!-- Contenedor para la imagen y el texto -->
+        <div class="flex flex-col md:flex-row items-center justify-center mt-8">
+            <!-- Imagen -->
+            <img src="img/mision.jpg" alt="Reparación" class="w-full md:w-1/2 h-auto rounded-lg shadow-lg mb-8 md:mb-0">
+
+            <!-- Descripción del servicio -->
+            <div class="md:ml-8 text-white text-justify text-3xl">
+                <p class="mb-4">
+                    Ofrecer soluciones integrales y personalizadas en la reparación, mantenimiento y armado de computadoras de escritorio, garantizando un servicio profesional, confiable y accesible. Nos comprometemos a superar las expectativas de nuestros clientes, hogares, empresas y estudiantes, mediante tecnología eficiente e innovadora. Buscamos optimizar el rendimiento de los equipos y facilitar el aprovechamiento de la tecnología en la vida cotidiana, asegurando excelencia, honestidad y atención especializada en cada servicio.
+                </p>
+            </div>            
+        </div>
+    </div>
+</section>
+
+<!--Footer-->
+<footer class="w-full flex flex-col items-center justify-center py-8 px-8 bg-black text-white">
+    <!-- Logo -->
+    <img src="img/horizontal-logo(1)-copia.png" alt="Logo" class="w-44 mb-4">
+
+    <!-- Social Icons -->
+    <div class="flex items-center justify-center mb-4 space-x-4">
+        <a href="#" class="text-white hover:text-gray-300">
+            <i class="fab fa-facebook-f text-4xl border-0 border-white p-3 rounded-full hover:bg-white hover:text-black transition duration-300"></i>
+        </a>
+        <a href="#" class="text-white hover:text-gray-300">
+            <i class="fab fa-discord text-4xl border-0 border-white p-3 rounded-full hover:bg-white hover:text-black transition duration-300"></i>
+        </a>
+        <a href="#" class="text-white hover:text-gray-300">
+            <i class="fab fa-instagram text-4xl border-0 border-white p-3 rounded-full hover:bg-white hover:text-black transition duration-300"></i>
+        </a>
+        <a href="#" class="text-white hover:text-gray-300">
+            <i class="fas fa-envelope text-4xl border-0 border-white p-3 rounded-full hover:bg-white hover:text-black transition duration-300"></i>
+        </a>
+    </div>
+
+    <!-- Payment Methods -->
+    <!-- Payment Methods as Buttons -->
+     <!-- Payment Methods as Buttons -->
+    <div class="flex items-center justify-center space-x-4 mb-4">
+    <button class="w-16 h-16 p-2 bg-white rounded-lg hover:bg-gray-200 transition duration-300">
+        <img src="img/VISA.jpg" alt="Visa" class="w-full h-full object-contain">
+    </button>
+    <button class="w-16 h-16 p-2 bg-white rounded-lg hover:bg-gray-200 transition duration-300">
+        <img src="img/mastercard.png" alt="Mastercard" class="w-full h-full object-contain">
+    </button>
+    <!-- PayPal Button with Link -->
+    <a href="https://www.paypal.com/invoice/p/#D458CTJNU6HYNHQT" target="_blank">
+        <button class="w-16 h-16 p-2 bg-white rounded-lg hover:bg-gray-200 transition duration-300">
+            <img src="img/paypal.png" alt="PayPal" class="w-full h-full object-contain">
+        </button>
+    </a>
+    <button class="w-16 h-16 p-2 bg-white rounded-lg hover:bg-gray-200 transition duration-300">
+        <img src="img/amex.png" alt="American Express" class="w-full h-full object-contain">
+    </button>
+    </div>
+
+
+
+    <!-- Footer Menu -->
+    <ul class="flex items-center justify-center flex-wrap mb-4 text-xl">
+        <li class="menu-item cursor-pointer mx-4 hover:opacity-100 opacity-60"><a href="doc/Aviso.pdf">Aviso de Privacidad </a></li>
+        <li class="menu-item cursor-pointer mx-4 hover:opacity-100 opacity-60"><a href="doc/Términos.pdf">Términos & Condiciones </a></li>
+    </ul>
+
+    <!-- Copyright -->
+    <span class="text-opacity-30">&copy; 2024, ByTech Assembly. Todos los derechos reservados.</span>
+</footer>
+<!--JavaScript-->
+<script src="js/scripts.js"></script>
+</body>
+</html>
